@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nonniclaundry.css">
+    <link rel="short icon" href="nonnic logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> -->
+    <!-- <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/brands.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/brands.min.css"> -->
+    <title>nonnic laundry</title>
+</head>
+<body>
+    <nav>
+       <div id="flexnavele">
+            <!-- <div class="imgstyle2">
+                <img src="/nonniclaundry/nonnic photos/nonnic logo.jpg" alt="">
+            </div> -->
+            <div class="navbuttons">
+                <button id="about"><i class="fa fa-info" style="margin-right: 10px;"></i>About us</button>
+                <button id="service"><i class="fa fa-gear" style="margin-right: 10px;"></i>Services</button>
+                <button id="call"><i class="fa fa-phone" style="margin-right: 10px;"></i>Contact</button>
+            </div>
+       </div>
+    </nav>
+    <div id="section-spread">
+            <div class="introphoto">
+                <img src="nonnic logo.jpg" alt="">
+            </div>
+            <div class="introbar">
+                <h1>Where cleaniness meets care....</h1>
+            </div>
+            <div class="introbar">
+                <h2>Nonnic is a leading laundry company <br> that offers proffessional and amazing cleaning and maintanance <br> services to her customers.</h2>
+            </div>
+    </div>
+    <div>
+        <div id="servback">
+            <p>Explore Our Services</p>
+        </div>
+        <div class="servicesback">
+            <div class="flexcolservices">
+                <div class="flexrowservices">
+                    <div id="box1">
+                        <div class="box1"></div>
+                        <h3>Fabric washing and dry cleaning services</h3>
+                    </div>
+                    <div id="box2">
+                        <div class="box2"></div>
+                        <h3>Ironing and packaging of clothes</h3>
+                    </div>
+                    <div id="box3">
+                        <div class="box3"></div>
+                        <h3>Stain removing and cleaning of shoes</h3>
+                    </div>
+                </div>
+                <div class="flexrowservices">
+                    <div id="box4">
+                        <div class="box4"></div>
+                        <h3>Industrial cleaning</h3>
+                    </div>
+                    <div id="box5">
+                        <div class="box5"></div>
+                        <h3>Sofa cleaning</h3>
+                    </div>
+                    <div id="box6">
+                        <div class="box6"></div>
+                        <h3>Rug cleaning</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="orderbar">
+            <div class="order">
+                <img src="delivery.jpg" alt="">
+            </div>
+            <h5>Order for a pick-up service and have your <br> wears washed and delivered within 24hours.</h5>
+            <div class="btn">
+                <button id="place">Order</button>
+            </div>
+            <div id="reach">
+                <h4>To place a pick-up order, Call or whatsapp <br> +234 9116062402</h4>
+                <div class="btnok">
+                    <button id="ok">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="foot">
+        <div class="footerflex">
+            <div>
+                <div class="footer">
+                    <h6>Contact</h6>
+                </div>
+                <div class="info">
+                    <h2><i class="fa fa-phone" style="margin-right: 10px;"></i>+234 9116062402</h2>
+                    <h2><i class="fa fa-home" style="margin-right: 10px;"></i>157 sectariate quaters,ogui road,Enugu state,Nigeria.</h2>
+                    <div class="imgicon">
+                        <h2><img src="mail.jpg" alt="">nonniclaundry@gmail.com</h2>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="footer">
+                    <h6>Social</h6>
+                </div>
+                <div class="info">
+                    <div class="last">
+                        <button style="background-image: url('fb.jpg');"></button>
+                        <button style="background-image: url('insta.jpg');"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> 
+
+    <script>
+        const footer = document.getElementById('foot')  
+        var servicebtn = document.getElementById('service') 
+        let aboutbtn = document.getElementById('about')
+        const contactbtn = document.getElementById('call')  
+        let server = document.getElementById('servback')
+        const comfort = document.getElementById('reach');
+        var info = document.getElementById('section-spread');
+        let close = document.getElementById('ok').addEventListener('click',function(){
+            comfort.style.display = 'none'
+        })
+        aboutbtn.addEventListener('click',scrollchange) 
+        servicebtn.addEventListener('click',scrollchange2)
+        contactbtn.addEventListener('click',scrollchange3)
+        
+        function scrollchange (){
+            info.scrollIntoView();
+            aboutbtn.style.border = '3px solid goldenrod';
+            servicebtn.style.border = 'none'
+            contactbtn.style.border = 'none'
+        }
+        function scrollchange2 (){
+            aboutbtn.style.border = 'none';
+            servicebtn.style.border = '3px solid goldenrod'
+            contactbtn.style.border = 'none'
+
+            server.scrollIntoView();
+        }
+        function scrollchange3 (){
+            aboutbtn.style.border = 'none';
+            servicebtn.style.border = 'none'
+            contactbtn.style.border = '3px solid goldenrod'
+
+            footer.scrollIntoView()
+        }
+
+        var pick = document.getElementById('place')
+        pick.addEventListener('click',function (){
+            comfort.style.display = 'block';
+        })
+    </script>
+</body>
+</html>

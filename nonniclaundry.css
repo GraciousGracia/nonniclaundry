@@ -1,0 +1,942 @@
+#section {
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+}
+body {
+    margin: 0%;
+    padding: 0%;
+}
+nav {
+    background-color: rgb(22, 22, 22);
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    /* margin-top: -30px; */
+}
+.imgstyle2 img{
+    height: 15vh;
+    width: 18vh;
+    margin-left: 55%;
+}
+.imgstyle1 img{
+    width: 50%;
+    height: 80vh;
+    margin-left: 50%;
+}
+#section-spread {
+    background-image: url("back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:  gray;
+    background-blend-mode: multiply;
+    height: 80vh;
+    width: 100%;
+}
+.navbuttons {
+    /* margin-left: 40%; */
+    margin-top: 25px;
+}
+.navbuttons button {
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: rgb(63, 61, 61);
+    /* border: 0.5px solid goldenrod; */
+    cursor: pointer;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    border: none;
+}
+.navbuttons :hover {
+    background-color: rgb(27, 27, 27);
+    transition: 1s;
+}
+#flexnavele {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.introbar h1 {
+    font-size: 18px;
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+.introbar h2 {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+.introphoto img{
+    height: 30vh;
+    width: 17%;
+    border-radius: 2px;
+    margin-left: 40%;
+    margin-top: 100px;
+    box-shadow: 5px 2px 1px black;
+}
+p {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+#servback {
+    background: none;
+    height: 55px;
+    width: 36%;
+    margin-left: 33%;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 10px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+.servicesback {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    /* margin-top: 200px; */
+}
+.flexrowservices {
+    display: flex;
+    justify-content: space-evenly;
+}
+.flexcolservices {
+    display: flex;
+    flex-direction: column;
+}
+#box1,#box2,#box3 {
+    height: 45vh;
+    width: 25%;
+    background-color: rgb(66, 66, 66);
+    border-radius: 3px;
+}
+#box4,#box5,#box6 {
+    margin-top: 20px;
+    height: 45vh;
+    width: 25%;
+    background-color: rgb(66, 66, 66);
+    border-radius: 3px;
+}
+.box1 {
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-name: anime1;
+    background-image: url("05-what-clothes-can-be-dry-cleaned.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:30vh;
+    width:70%;
+    margin-top: 20px;
+    border-radius: 3px;
+    margin-left: 53px;
+}
+.box2 {
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-name: anime2;
+    background-image: url("close-up-of-a-womans-hands-ironing-a-washed-and-wrinkled-shirt-using-a-steam-iron-on-an.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 70%;
+    margin-left: 53px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+.box3 {
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-name: anime3;
+    background-image: url("stain-removal-getty-1220-2000-f7cd873a18e34aacbfa129d36dfe1b98.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 70%;
+    margin-left: 53px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+@keyframes anime1 {
+    0%{background-image: url("05-what-clothes-can-be-dry-cleaned.jpg");}
+    25%{background-image: url("nonnic logo.jpg");}
+    50%{background-image: url("How-Does-Dry-Cleaning-Works.jpg");}
+    75%{background-image: url("Washing_20Machine-1_1400x.jpg");}
+    100%{background-image: url("05-what-clothes-can-be-dry-cleaned.jpg");}
+}
+
+@keyframes anime2 {
+    0%{background-image: url("close-up-of-a-womans-hands-ironing-a-washed-and-wrinkled-shirt-using-a-steam-iron-on-an.jpg");}
+    25%{background-image: url("nonnic logo.jpg");}
+    50%{background-image: url("ironing-clothes-on-ironing-board.jpg");}
+    75%{background-image: url("wash-iron-service-london.jpeg");}
+    100%{background-image: url("Is-Dry-Cleaning-Worth-It.jpg");}
+}
+@keyframes anime3 {
+    0%{background-image: url("stain-removal-getty-1220-2000-f7cd873a18e34aacbfa129d36dfe1b98.jpg");}
+    25%{background-image: url("nonnic logo.jpg");}
+    50%{background-image: url("obuv-min.jpg");}
+    75%{background-image: url("cleaning.jpeg");}
+    100%{background-image: url("obuv-min.jpg");}
+}
+.box4 {
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-name: anime4;
+    background-image: url("Different-types-of-industrial-cleaners-and-their-uses.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:30vh;
+    width:70%;
+    margin-top: 20px;
+    border-radius: 3px;
+    margin-left: 53px;
+}
+.box5{
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-name: anime5;
+    background-image: url("cleaning-leather-furniture-2-1024x672.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:30vh;
+    width:70%;
+    margin-top: 20px;
+    border-radius: 3px;
+    margin-left: 53px;
+}
+.box6{
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-name: anime6;
+    background-image: url("rug-cleaning.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:30vh;
+    width:70%;
+    margin-top: 20px;
+    border-radius: 3px;
+    margin-left: 53px;
+}
+@keyframes anime4 {
+    0%{background-image: url("Different-types-of-industrial-cleaners-and-their-uses.jpg");}
+    50%{background-image: url("commercial-cleaning-service(0).jpeg");}
+    100%{background-image: url("diamond-shine-cleaning-services-2.jpg");}
+}
+
+@keyframes anime5 {
+    0%{background-image: url("cleaning-leather-furniture-2-1024x672.jpg");}
+    25%{background-image: url("professinal-sofa-cleaning.jpeg");}
+    50%{background-image: url("sd-500x500.jpg");}
+    75%{background-image: url("professinal-sofa-cleaning.jpeg");}
+    100%{background-image: url("nonnic logo.jpg");}
+}
+@keyframes anime6 {
+    0%{background-image: url("rug-cleaning.jpeg");}
+    25%{background-image: url("nonnic logo.jpg");}
+    50%{background-image: url("person-cleaning-blue-carpet.jpeg-e1683634052108.jpg");}
+    75%{background-image: url("Pro-Deep-Clean-Path.jpg");}
+    100%{background-image: url("rug-cleaning.jpeg");}
+}
+h3 {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    font-weight: lighter;
+    color: white;
+}
+#orderbar {
+    height: 90vh;
+    width: 50%;
+    margin-left: 25%;
+    background-color: black;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.order img {
+    height: 40vh;
+    width: 40%;
+    margin-left: 30%;
+}
+h5 {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.btn button {
+    height: 40px;
+    width: 90px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-size: 19px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    margin-left: 325px;
+    font-weight: bold;
+}
+#reach {
+    background-color: rgb(83, 83, 83);
+    height: 23%;
+    width: 50%;
+    margin-top: -8px;
+    margin-left: 25%;
+    border-radius: 3px;
+    animation-name: contact;
+    animation-duration: .8s;
+    display: none;
+}
+@keyframes contact {
+    from {
+        margin-left: 150%;
+    }to {
+        margin-left: 25%;
+    }
+}
+.btnok {
+    margin-left: 140px;
+}
+.btnok button {
+    cursor: pointer;
+    height: 30px;
+    width: 90px;
+    border-radius: 2px;
+    margin-top: -70px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer {
+    height: 60vh;
+    width: 100%;
+    background-color: rgb(117, 116, 116);
+    margin-top: 70px;
+}
+h4 {
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.footerflex {
+    display: flex;
+    flex-direction: column;
+}
+.footer {
+    text-align: center;
+}
+.footer h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 20px;
+}
+.info {
+    text-align: center;
+}
+.info h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.imgicon img{
+    height: 20px;
+    width: 25px;
+    border-radius: 2px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.lasticon {
+    display: flex;
+    flex-direction: column;
+    margin-left: 45%;
+    
+}
+.last button{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    margin-top: -4%;
+    cursor: pointer;
+}
+@media screen and (max-width:480px) and (min-width:360px){
+    nav {
+        background-color: rgb(22, 22, 22);
+        height: 15vh;
+        width: 100%;
+        margin-bottom: -7px;
+        display: block;
+    }
+    #section-spread {
+        background-image: url("back.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 85vh;
+        width: 160%;
+    }
+    #introbar {
+        background: none;
+        height: 65vh;
+        width: 80%;
+        margin-left: 50px;
+        box-shadow: 0px 2px 10px rgb(0, 0, 0);
+    }
+    .introbar h1 {
+        font-size: 35px;
+    }
+    .introbar h2 {
+        font-size: 28px;
+    }
+    .introphoto img{
+        height: 30vh;
+        width: 47%;
+        border-radius: 2px;
+        margin-left: 105px;
+        margin-top: 110px;
+        box-shadow: 5px 2px 1px black;
+    }
+    .navbuttons {
+        gap: 10px;
+        /* margin-left: 40%;
+        margin-top: 142%;
+        margin-left: 70px; */
+    }
+    .navbuttons button {
+        height: 60px;
+        width: 180px;
+        border-radius: 5px;
+        background-color: rgb(63, 61, 61);
+        border: 0.5px solid goldenrod;
+        cursor: pointer;
+        font-size: 27px;
+        color: whitesmoke;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        border: none;
+        font-weight: bold;
+    }
+    #servback {
+        background: none;
+        height: 55px;
+        width: 110%;
+        margin-left: 30%;
+        margin-bottom: 20px;
+        box-shadow: none;
+        border-radius: 5px;
+        border-bottom: 1px solid goldenrod;
+    }
+    #servback p {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .servicesback {
+        background: none;
+        height: 100vh;
+        width: 125%;
+
+    }
+    .flexrowservices {
+        display: flex;
+        flex-direction: column;
+       gap: 20px;
+    }
+    .flexcolservices {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .box1 {
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        animation-name: anime1;
+        background-image: url("05-what-clothes-can-be-dry-cleaned.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:50vh;
+        width:80%;
+        margin-top: 10px;
+        border-radius: 3px;
+        margin-left: 53px;
+        border-radius: 15px;
+    }
+    .box2 {
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        animation-name: anime2;
+        background-image: url("close-up-of-a-womans-hands-ironing-a-washed-and-wrinkled-shirt-using-a-steam-iron-on-an.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+        width: 80%;
+        margin-left: 53px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+    .box3 {
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        animation-name: anime3;
+        background-image: url("stain-removal-getty-1220-2000-f7cd873a18e34aacbfa129d36dfe1b98.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+        width: 80%;
+        margin-left: 53px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+    .box4 {
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        animation-name: anime4;
+        background-image: url("Different-types-of-industrial-cleaners-and-their-uses.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:50vh;
+        width:80%;
+        margin-top: 10px;
+        border-radius: 15px;
+        margin-left: 53px;
+    }
+    .box5{
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        animation-name: anime5;
+        background-image: url("cleaning-leather-furniture-2-1024x672.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:50vh;
+        width:80%;
+        margin-top: 10px;
+        border-radius: 15px;
+        margin-left: 53px;
+    }
+    .box6{
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        animation-name: anime6;
+        background-image: url("rug-cleaning.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:50vh;
+        width:80%;
+        margin-top: 10px;
+        border-radius: 15px;
+        margin-left: 53px;
+    }
+    #box1,#box2,#box3 {
+        height: 70vh;
+        width: 105%;
+        background-color: rgb(66, 66, 66);
+        border-radius: 3px;
+        margin-left: 60px;
+        background-color: transparent;
+    }
+    #box4,#box5,#box6 {
+        margin-top: 20px;
+        height: 70vh;
+        width: 105%;
+        background-color: rgb(66, 66, 66);
+        border-radius: 3px;
+        margin-left: 60px;
+        background-color: transparent;
+    }
+    h3 {
+        font-size: 25px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        text-align: center;
+        font-weight: lighter;
+        color: black;
+        font-weight: bold;
+    }
+    #orderbar {
+        height: 140vh;
+        width: 165%;
+        background-color: black;
+        margin-top: 350vh;
+        border-radius: 5px;
+        margin-left: -20px;
+        /* background: none; */
+    }
+    .order img {
+        height: 60vh;
+        width: 90%;
+        margin-left: 5%;
+        /* margin-right: 100px; */
+    }
+    h5 {
+        font-size: 27px;
+        /* margin-right: 80px; */
+        color: white;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        transform: translate(5px,-100px);
+    }
+    footer {
+        height: 90vh;
+        width: 160%;
+        background-color: rgb(117, 116, 116);
+        margin-top: 30px;
+    }
+    .btn {
+       transform: translate(-90px,-120px);
+    }
+    #reach {
+        background-color: rgb(83, 83, 83);
+        height: 23%;
+        width: 90%;
+        transform: translate(0px,-100px);
+        margin-left: 6.5%;
+        border-radius: 3px;
+        animation-name: cont;
+        animation-duration: .8s;
+        display: none;
+    }
+    h4 {
+        font-size: 32px;
+    }
+    @keyframes cont {
+        from {
+            margin-left: 15%;
+        }to {
+            margin-left: 6.5%;
+        }
+    }
+    .btn button {
+        height: 60px;
+        width: 180px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+        font-size: 27px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        /* margin-left: 170px; */
+    }
+    .btnok {
+        margin-left: 200px;
+    }
+    .btnok button {
+        cursor: pointer;
+        height: 60px;
+        width: 150px;
+        border-radius: 2px;
+        margin-top: 8px;
+        border: none;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .footer h6 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
+        font-size: 30px;
+    }
+    .info {
+        text-align: center;
+    }
+    .info h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-weight: lighter;
+        margin-top: -15px;
+    }
+    .imgicon img{
+        height: 40px;
+        width: 50px;
+        border-radius: 2px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+    .lasticon {
+        display: flex;
+        flex-direction: column;
+        margin-left: 45%;
+        
+    }
+    .last button{
+        border-radius: 50px;
+        height: 70px;
+        width: 70px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: none;
+        margin-top: -4%;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width:481px) and (max-width:768px){
+    .navbuttons button {
+        height: 50px;
+        width: 160px;
+        border-radius: 5px;
+        background-color: rgb(63, 61, 61);
+        /* border: 0.5px solid goldenrod; */
+        cursor: pointer;
+        font-size: 23px;
+        color: whitesmoke;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        border: none;
+    }
+    .introphoto img{
+        height: 30vh;
+        width: 32%;
+        border-radius: 2px;
+        margin-left: 30%;
+        margin-top: 100px;
+        box-shadow: 5px 2px 1px black;
+    }
+    .introbar h1 {
+        font-size: 23px;
+        font-family: cursive;
+        font-style: italic;
+        text-align: center;
+        color: white;
+    }
+    .introbar h2 {
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        text-align: center;
+        color: white;
+    }
+    #servback {
+        background: none;
+        height: 55px;
+        width: 46%;
+        margin-left: 30%;
+        margin-bottom: 20px;
+        box-shadow: 0px 2px 10px rgb(0, 0, 0);
+        border-radius: 5px;
+    }
+    p {
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-style: italic;
+        transform: translate(0px,10px);
+    }
+    .flexrowservices {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+    #box1,#box2,#box3 {
+        height: 45vh;
+        width: 35%;
+        background-color: transparent;
+        border-radius: 3px;
+    }
+    #box4,#box5,#box6 {
+        margin-top: 20px;
+        height: 45vh;
+        width: 35%;
+        background-color: transparent;
+        border-radius: 3px;
+    }
+    .box1 {
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        animation-name: anime1;
+        background-image: url("05-what-clothes-can-be-dry-cleaned.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:30vh;
+        width:97%;
+        margin-top: 20px;
+        border-radius: 7px;
+        margin-left: 3px;
+    }
+    .box2 {
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        animation-name: anime2;
+        background-image: url("close-up-of-a-womans-hands-ironing-a-washed-and-wrinkled-shirt-using-a-steam-iron-on-an.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 30vh;
+        width: 97%;
+        margin-left: 3px;
+        border-radius: 7px;
+        margin-top: 20px;
+    }
+    .box3 {
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        animation-name: anime3;
+        background-image: url("stain-removal-getty-1220-2000-f7cd873a18e34aacbfa129d36dfe1b98.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 30vh;
+        width: 97%;
+        margin-left: 3px;
+        border-radius: 7px;
+        margin-top: 20px;
+    }
+    .box4 {
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        animation-name: anime4;
+        background-image: url("Different-types-of-industrial-cleaners-and-their-uses.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:30vh;
+        width:97%;
+        margin-top: 10px;
+        border-radius: 7px;
+        margin-left: 3px;
+    }
+    .box5 {
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        animation-name: anime4;
+        background-image: url("Different-types-of-industrial-cleaners-and-their-uses.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:30vh;
+        width:97%;
+        margin-top: 10px;
+        border-radius: 7px;
+        margin-left: 3px;
+    }
+    .box6 {
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        animation-name: anime4;
+        background-image: url("Different-types-of-industrial-cleaners-and-their-uses.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:30vh;
+        width:97%;
+        margin-top: 10px;
+        border-radius: 7px;
+        margin-left: 3px;
+    }
+    h3 {
+        font-size: 22px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        text-align: center;
+        font-weight: lighter;
+        color: white;
+    }
+    .servicesback {
+        background-color: black;
+        height: 90vh;
+        width: 100%;
+        /* margin-top: 200px; */
+    }
+    #orderbar {
+        height: 90vh;
+        width: 80%;
+        margin-left: 13%;
+        background-color: black;
+        margin-top: 50px;
+        border-radius: 5px;
+    }
+    .order img {
+        height: 40vh;
+        width: 43%;
+        margin-left: 30%;
+    }
+    .btn button {
+        height: 40px;
+        width: 100px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+        font-size: 19px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        margin-left: 250px;
+        font-weight: bold;
+    }
+    #reach {
+        background-color: rgb(83, 83, 83);
+        height: 23%;
+        width: 60%;
+        margin-top: -8px;
+        margin-left: 20%;
+        border-radius: 3px;
+        animation-name: contact;
+        animation-duration: .8s;
+        display: none;
+    }
+    .btnok {
+        margin-left: 140px;
+    }
+    .btnok button {
+        cursor: pointer;
+        height: 35px;
+        width: 90px;
+        border-radius: 2px;
+        margin-top: -70px;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    @keyframes contact {
+        from {
+            margin-left: 150%;
+        }to {
+            margin-left: 20%;
+        }
+    }
+    .footer h6 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: black;
+        font-size: 20px;
+    }
+    .info {
+        text-align: center;
+    }
+    .info h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 22px;
+        font-weight: lighter;
+        margin-top: -15px;
+    }
+}
+
